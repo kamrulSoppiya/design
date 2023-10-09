@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #F1F1F1 */
+/* padding: 10px; */
+.row{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 900px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    width: 900px;
+    box-shadow: 0.2px 0.3px 0.2px 0.4px rgb(209, 209, 209);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.header{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #c2c1c1;
+    background-color: rgb(199, 197, 197);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+.header p{
+    font-weight: 600;
+}
+.sideBar{
+    grid-column: 1/span 1;
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    border-right:1px solid rgb(199, 197, 197);
+}
+.topPartSideBar{
+    border-bottom: 1px solid rgb(199, 197, 197);
+    padding-bottom: 14px;
+}
+.bottomPartSideBar, .topPartSideBar{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    padding: 10px;
+}
+.sideBarItem{
+    display: flex;
+    justify-content: space-between;
+}
+.sideBarItem.active{
+   background-color: rgb(226, 226, 226);
+   padding:7px;
+   border-radius: 4px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+}
+.Polaris-Icon__Svg_375hu{
+    height: 20px;
+    padding: 2px;
+    background-color: #F1F1F1;
+}
+.mainBody{
+    grid-column: 2/5;
+    display: grid;
+    grid-template-rows: 3;
+    padding:10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.searchBar{
+    display: flex;
+    position: relative;
+    height: 32px;
+    width: 230px;
+}
+.searchBar .searchIcon, .searchBar .searchInput, .searchBar .searchItemRemove{
+    position: absolute;
+}
+.searchBar .searchIcon{
+    z-index: 1;
+    font-size: 13px;
+    margin-left: 12px;
+    top:10px;
+}
+.searchBar .searchItemRemove{
+    left:100%;
+    top: 9px;
+    display: none;
+}
+.searchBar .searchInput{
+    height: 32px;
+    width: 230px;
+    padding-left:30px;
+    border:1px solid rgb(199, 197, 197);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.filterItems{
+    margin-top:5px;
+}
+.filterItems button{
+    padding: 4px 13px;
+    border-radius: 6px;
+    outline:none;
+    border:1px solid rgb(199, 197, 197);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+}
+.Preview{
+    grid-column: 5/-1;
+    background-color: rgb(167, 241, 190);
+}
+.footer{
+    grid-column: 1/-1;
+    border-top:1px solid rgb(199, 197, 197);
+    display: flex;
+    justify-content: end;
+    gap:10px;
+    padding: 15px;
+}
+.footer button{
+    outline:none;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border:1px solid rgb(199, 197, 197);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.footer button:hover{
+    background-color: rgb(250, 248, 248);
+}
+.footer .active{
+    background-color: #585858;
+}
+.footer .doneBtn{
+    background-color: #c2c2c2;
+    color: rgb(252, 252, 252);
+}
+
+
